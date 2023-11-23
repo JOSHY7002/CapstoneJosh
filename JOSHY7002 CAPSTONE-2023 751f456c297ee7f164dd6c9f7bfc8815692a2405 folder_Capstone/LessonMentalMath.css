@@ -1,0 +1,251 @@
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(56, 228, 85, 0.649);
+}
+
+hr.rounded {
+  border-top: 8px solid rgb(31, 145, 73);
+  border-radius: 5px;
+
+}
+
+.space{
+  padding: 100px;
+}
+
+
+p{
+  font-size: 20px;
+}
+h1{
+  font-size: 30px;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(104, 255, 109);
+    background-color: rgba(112, 255, 93, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: rgb(36, 170, 54);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: black;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  
+  .header{
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  
+  
+  .header h1{
+    font-size: 35px;
+    color: #248f07;
+  }
+
+  .introduction{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid 2px rgb(8, 91, 19);
+    border-radius: 28px/65px;
+   
+
+  }
+  .introduction > h1 {
+    color: #1e540f;
+    font-size: 40px;
+  }
+
+  .section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+  }
+  .center{
+    display: flex;
+    justify-content: center;
+  }
+
+  input {
+    height: 45px;
+    width: 100px;
+  }
+  input[type="number"]{
+    font-size: 24px;
+  }
+
+  .try{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+  }
+
+  .example{
+    background-color: #caffbb;
+    height: 150px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 28px/65px;
+  }
+  .examptitle{
+    font-size: 24px;
+    background-color: #60c944;
+    width: 500px;
+    
+  border-radius: 25px/63px;
+    display: flex;
+    justify-content: center;}
+
+
+    .button{
+      font-size: 18px;
+      padding: 10px 0;
+      width: 200px;
+      text-align: center;
+      border: 1px solid #247e00;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #397e00;
+      background-color: white;
+      
+      }
+      
+      
+      .button:hover{
+      
+      cursor: pointer;
+      box-shadow: 0 4px 14px 0 rgba(90, 235, 85, 0.5);
+      transform: translateY(-0.1rem);
+      transition: transform 150ms;
+      }
+
+      .btn{
+        display: flex;
+     flex-direction: column;
+     align-items: center;
+      }
+
+
+  /*footer*/
+
+  .footer #button{
+	width:35px;
+	height:35px;
+	border: #727172 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: rgb(51, 223, 97);
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 30px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+}

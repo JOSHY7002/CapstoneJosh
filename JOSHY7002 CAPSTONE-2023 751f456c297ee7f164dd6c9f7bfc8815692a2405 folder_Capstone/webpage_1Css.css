@@ -1,0 +1,347 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+body{
+    background-color: aliceblue;
+}
+.space{
+    padding: 250px;
+}
+
+
+.header{min-height:100vh;
+width: 100%;
+background-image: linear-gradient(rgba(14, 81, 123, 0.7), rgba(14, 81, 123, 0.7)), url(images/math.jpeg);
+background-position: center;
+background-size: cover;
+position: relative;
+}
+
+.Menu{
+background: rgba(14, 11, 208, 0.848);
+text-align: center;
+}
+
+.Menu ul{
+display: inline-flex;
+list-style: none;
+color: aliceblue;
+}
+
+.Menu ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.Menu ul li a{text-decoration: none;
+    color:white;
+}
+.active,.Menu ul li:hover{
+background-color: rgba(107, 105, 246, 0.848);
+border-radius:3px;
+transition: 0.5s;
+}
+.sub-menu-2{display: none;}
+
+
+
+
+.Menu ul li:hover .sub-menu-2{
+    display:block;
+    position: absolute;
+    background: rgba(14, 11, 208, 0.848);
+    margin-top: 15px;
+    margin-left: -15px ;
+    transition: 1s;
+}
+
+.Menu ul li:hover .sub-menu-2 ul{
+
+    display: block;
+    margin: 10px;
+    transition: 1s;
+}
+
+.Menu ul li:hover .sub-menu-2 ul li {
+
+width: 150px;
+padding:10px;
+border-bottom: 1px dotted #fff;
+background: transparent;
+border-radius: 0;
+text-align: left;
+transition: 1s;
+}
+
+.Menu ul li:hover .sub-menu-2 ul li:last-child {
+border-bottom: none;
+
+}
+
+.Menu ul li:hover .sub-menu-2 ul li a:hover{
+    color: rgba(195, 195, 244, 0.848);
+    transition: 1s;
+}
+/* Title deco*/
+
+.text-box{
+width: 90%;
+color:#fff;
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+
+.text-box h1 {font-size: 62px;
+font-family: Arial, Helvetica, sans-serif;}
+.text-box p{
+    margin:10px 0 40px;
+    font-size: 15px;
+    color:aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button{display: inline-block;
+text-decoration: none;
+color: aliceblue;
+border: 1px solid #fff;
+padding: 12px 34px;
+font-size: 13px;
+background: transparent;
+position: relative;
+cursor: pointer;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.button:hover{
+border:1px solid rgba(32, 81, 187, 0.848);
+background:rgba(32, 81, 187, 0.848);
+transition: 1s;
+}
+
+/*about*/
+
+.About{width:80% ;
+margin: auto;
+text-align: center;
+padding-top: 100px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.About p{color: black;
+font-size: 14px;
+font-weight:300;
+line-height:22px;
+padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.AboutCol{
+    flex-basis:31%;
+    background: #b8c4ff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.AboutCol:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    transform: translateY(-0.1rem);
+    transition: 0.5s;
+}
+
+/*images*/
+
+.Images{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.imgCol{
+    flex-basis:32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.imgCol img{
+    width: 100%;
+    display: block;
+}
+ 
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(48, 104, 172, 0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*footer*/
+.footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
